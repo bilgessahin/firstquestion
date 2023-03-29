@@ -1,5 +1,7 @@
 #include "Student.h"
 #include <vector>
+#include <iostream>
+
 
 cur_id = 1;
 
