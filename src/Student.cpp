@@ -25,7 +25,7 @@ void Student::getData()
      for (int i = 0; i < numberOfMarks; i++) {
         std::cout << i << "\n.notu giriniz : ";
         std::cin >> mark;
-        marks.push_back(mark);
+        //marks.push_back(mark);
     }
 }
 
