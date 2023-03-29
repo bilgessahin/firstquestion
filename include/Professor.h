@@ -8,6 +8,7 @@ class Professor : public Person {
     int cur_id;
 
 public:
+    Professor();
     void getData()override;
     void putData()const override;
 };
