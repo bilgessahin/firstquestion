@@ -10,15 +10,15 @@ Professor::Professor()
 
 void Professor::getData()
 {
-    std::cout << "isim giriniz : " << "\n";
+    std::cout << "isim giriniz : ";
     std::cin >> name;
-    std::cout << "yas giriniz : " << "\n";
+    std::cout << "yas giriniz : ";
     std::cin >> age;
-    std::cout << "publications giriniz : " << "\n";
+    std::cout << "publications giriniz : ";
     std::cin >> publications;
 }
 
 void Professor::putData() const
 {
-    std::cout << name << age << publications << cur_id << "\n";
+    std::cout << "ad : " << name << "\nyas : " << age << "\npublications : " << publications <<  "\ncurrent_id : " << cur_id << "\n";
 }

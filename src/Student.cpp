@@ -14,16 +14,16 @@ void Student::getData()
 {
     int numberOfMarks;
 
-    std::cout << "isim giriniz : " << "\n";
+    std::cout << "isim giriniz : ";
     std::cin >> name;
-    std::cout << "yas giriniz : " << "\n";
+    std::cout << "yas giriniz : ";
     std::cin >> age;
-    std::cout << "kac adet not girilecek : " << "\n";
+    std::cout << "kac adet not girilecek : ";
     std::cin >> numberOfMarks;
 
      for (int i = 0; i < numberOfMarks; i++) {
         uint8_t mark;
-        std::cout << "not giriniz : " << "\n";
+        std::cout << "not giriniz : ";
         std::cin >> mark;
         marks.push_back(mark);
     }
@@ -36,5 +36,5 @@ void Student::putData() const
     for (int value : marks) {
         sum += value;
     }
-    std::cout << name << age << sum << cur_id << "\n";
+    std::cout << "ad : " << name << "\nyas : " age << "\nnotlar toplami : " << sum << "\ncurrent id : " << cur_id << "\n";
 }
