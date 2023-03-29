@@ -36,5 +36,5 @@ void Student::putData() const
     for (int value : marks) {
         sum += value;
     }
-    std::cout << "ad : " << name << "\nyas : " age << "\nnotlar toplami : " << sum << "\ncurrent id : " << cur_id << "\n";
+    std::cout << "ad : " << name << "\nyas : " << age << "\nnotlar toplami : " << sum << "\ncurrent id : " << cur_id << "\n";
 }
