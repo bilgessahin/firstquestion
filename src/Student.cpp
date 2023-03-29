@@ -3,11 +3,11 @@
 #include <iostream>
 
 
-cur_id = 1;
+int Student::id = 1;
 
 Student::Student()
 {
-    cur_id++;
+    cur_id = id++;
 }
 
 void Student::getData()

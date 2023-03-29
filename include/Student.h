@@ -12,6 +12,7 @@ class Student : public Person {
     int cur_id;
 
 public:
+    Student();
     void getData()override;
     void putData()const override;
 
