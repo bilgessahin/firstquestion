@@ -22,10 +22,10 @@ void Student::getData()
     std::cin >> numberOfMarks;
 
     uint8_t mark;
+    std::cout << "notlari giriniz : ";
      for (int i = 0; i < numberOfMarks; i++) {
-        std::cout << i << "\n.notu giriniz : ";
         std::cin >> mark;
-        //marks.push_back(mark);
+        marks.push_back(mark);
     }
 }
 
