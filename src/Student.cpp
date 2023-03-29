@@ -1,4 +1,5 @@
 #include "Student.h"
+#include <vector>
 
 cur_id = 1;
 
@@ -7,11 +8,23 @@ Student::Student()
     cur_id++;
 }
 
-void Student::getData(const std::string& name, const int& age, std::vector<uint8_t>& marks)
+void Student::getData()
 {
-    this->name = name;
-    this->age = age;
-    this->marks = std::move(marks);
+    int numberOfMarks;
+
+    std::cout << "isim giriniz : " << "\n";
+    std::cin >> name;
+    std::cout << "yas giriniz : " << "\n";
+    std::cin >> age;
+    std::cout << "kac adet not girilecek : " << "\n";
+    std::cin >> numberOfMarks;
+
+     for (int i = 0; i < numberOfMarks; i++) {
+        uint8_t mark;
+        std::cout << "not giriniz : " << "\n";
+        std::cin >> mark;
+        marks.push_back(mark);
+    }
 }
 
 void Student::putData()

@@ -4,11 +4,12 @@
 #include "Person.h"
 class Professor : public Person {
     int publications = 0;
-    static int cur_id;
+    static int id;
+    int cur_id;
 
 public:
-    void getData(std::string name, int age, int publications);
-    void putData()const;
+    void getData()override;
+    void putData()const override;
 };
 
 #endif //PROFESSOR_H

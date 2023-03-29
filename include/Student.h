@@ -7,11 +7,13 @@
 class Student : public Person {
 
     std::vector<uint8_t>marks;
-    static int cur_id;
+
+    static int id;
+    int cur_id;
 
 public:
-    void getData(const std::string& name, const int& age, std::vector<uint8_t>& marks);
-    void putData()const;
+    void getData()override;
+    void putData()const override;
 
 };
 

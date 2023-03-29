@@ -1,20 +1,23 @@
 #include "Professor.h"
 
-cur_id = 1;
+int Professor::id = 1;
 
 Professor::Professor()
 {
-    cur_id++;
+    cur_id = id++;
 }
 
-void Professor::getData(std::string name, int age, int publications)
+void Professor::getData()
 {
-    this->name = name;
-    this->age = age;
-    this->publications = publications;
+    std::cout << "isim giriniz : " << "\n";
+    std::cin >> name;
+    std::cout << "yas giriniz : " << "\n";
+    std::cin >> age;
+    std::cout << "publications giriniz : " << "\n";
+    std::cin >> publications;
 }
 
 void Professor::putData()
 {
-    std::cout << this->name << this->age << this->publications << this->cur_id << "\n";
+    std::cout << name << age << publications << cur_id << "\n";
 }

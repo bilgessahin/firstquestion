@@ -9,7 +9,7 @@ protected:
     int age;
 public:
     virtual void getData() = 0;
-    virtual void putData() = 0;
+    virtual void putData()const = 0;
 };
 
 #endif // PERSON_H
