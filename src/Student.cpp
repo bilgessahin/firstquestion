@@ -23,7 +23,7 @@ void Student::getData()
 
     uint8_t mark;
      for (int i = 0; i < numberOfMarks; i++) {
-        std::cout << "\nnot giriniz : ";
+        std::cout << i << "\n.notu giriniz : ";
         std::cin >> mark;
         marks.push_back(mark);
     }
