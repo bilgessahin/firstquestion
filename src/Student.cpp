@@ -1,5 +1,7 @@
 #include "Student.h"
 
+cur_id = 1;
+
 Student::Student()
 {
     cur_id++;

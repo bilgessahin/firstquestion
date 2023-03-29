@@ -3,8 +3,8 @@
 
 #include "Person.h"
 class Professor : public Person {
-int publications = 0;
-static int cur_id = 1;
+    int publications = 0;
+    static int cur_id;
 
 public:
     void getData(std::string name, int age, int publications);

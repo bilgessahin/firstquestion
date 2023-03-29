@@ -8,8 +8,8 @@ protected:
     std::string name;
     int age;
 public:
-    virtual void getdata() = 0;
-    virtual void putdata() = 0;
+    virtual void getData() = 0;
+    virtual void putData() = 0;
 };
 
 #endif // PERSON_H

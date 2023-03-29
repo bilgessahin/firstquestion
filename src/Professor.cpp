@@ -1,5 +1,7 @@
 #include "Professor.h"
 
+cur_id = 1;
+
 Professor::Professor()
 {
     cur_id++;
