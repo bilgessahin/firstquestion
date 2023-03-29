@@ -18,7 +18,7 @@ void Professor::getData()
     std::cin >> publications;
 }
 
-void Professor::putData()
+void Professor::putData() const
 {
     std::cout << name << age << publications << cur_id << "\n";
 }

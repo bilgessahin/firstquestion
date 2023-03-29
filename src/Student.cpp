@@ -29,7 +29,7 @@ void Student::getData()
     }
 }
 
-void Student::putData()
+void Student::putData() const
 {
     int sum = 0;
 
