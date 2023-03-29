@@ -28,12 +28,12 @@ int main(){
         }
         else per[i] = new Student; // Else the current object is of type Student
 
-        per[i]->getdata(); // Get the data from the user.
+        per[i]->getData(); // Get the data from the user.
 
     }
 
     for(int i=0;i<n;i++)
-        per[i]->putdata(); // Print the required output for each object.
+        per[i]->putData(); // Print the required output for each object.
 
     return 0;
 
