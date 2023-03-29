@@ -21,9 +21,9 @@ void Student::getData()
     std::cout << "kac adet not girilecek : ";
     std::cin >> numberOfMarks;
 
+    uint8_t mark;
      for (int i = 0; i < numberOfMarks; i++) {
-        uint8_t mark;
-        std::cout << "not giriniz : ";
+        std::cout << "\nnot giriniz : ";
         std::cin >> mark;
         marks.push_back(mark);
     }
