@@ -4,11 +4,11 @@
 #include "Person.h"
 class Professor : public Person {
 int publications = 0;
-int cur_id = 0;
+static int cur_id = 1;
 
 public:
     void getData(std::string name, int age, int publications);
-    void putData(std::string name, int age, int publications)const;
+    void putData()const;
 };
 
 #endif //PROFESSOR_H
