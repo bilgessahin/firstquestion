@@ -15,11 +15,12 @@ using namespace std;
 int main(){
 
     int n, val;
+    cout << "obje sayisini giriniz\n";
     cin>>n; //The number of objects that is going to be created.
     Person *per[n];
 
     for(int i = 0;i < n;i++){
-
+        cout << "Person tipini giriniz (1 Professor)\n";
         cin>>val;
         if(val == 1){
             // If val is 1 current object is of type Professor
