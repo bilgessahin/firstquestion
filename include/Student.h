@@ -6,15 +6,15 @@
 
 class Student : public Person {
 
-    std::vector<uint8_t>marks;
+    std::vector<int>marks;
 
     static int id;
     int cur_id;
 
 public:
     Student();
-    void getData()override;
-    void putData()const override;
+    void getdata()override;
+    void putdata()const override;
 
 };
 

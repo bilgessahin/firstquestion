@@ -8,7 +8,7 @@ Professor::Professor()
     cur_id = id++;
 }
 
-void Professor::getData()
+void Professor::getdata()
 {
     std::cout << "isim giriniz : ";
     std::cin >> name;
@@ -18,7 +18,7 @@ void Professor::getData()
     std::cin >> publications;
 }
 
-void Professor::putData() const
+void Professor::putdata() const
 {
     std::cout << "ad : " << name << "\nyas : " << age << "\npublications : " << publications <<  "\ncurrent_id : " << cur_id << "\n";
 }

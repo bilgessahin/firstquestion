@@ -9,8 +9,8 @@ class Professor : public Person {
 
 public:
     Professor();
-    void getData()override;
-    void putData()const override;
+    void getdata()override;
+    void putdata()const override;
 };
 
 #endif //PROFESSOR_H

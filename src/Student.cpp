@@ -10,7 +10,7 @@ Student::Student()
     cur_id = id++;
 }
 
-void Student::getData()
+void Student::getdata()
 {
     int numberOfMarks;
 
@@ -21,7 +21,7 @@ void Student::getData()
     std::cout << "kac adet not girilecek : ";
     std::cin >> numberOfMarks;
 
-    uint8_t mark;
+    int mark;
     std::cout << "notlari giriniz : ";
      for (int i = 0; i < numberOfMarks; i++) {
         std::cin >> mark;
@@ -29,12 +29,12 @@ void Student::getData()
     }
 }
 
-void Student::putData() const
+void Student::putdata() const
 {
     int sum = 0;
 
-    for (int value : marks) {
-        sum += value;
+    for (int i=0; i<marks.size(); i++) {
+        sum += marks[i];
     }
     std::cout << "ad : " << name << "\nyas : " << age << "\nnotlar toplami : " << sum << "\ncurrent id : " << cur_id << "\n";
 }
